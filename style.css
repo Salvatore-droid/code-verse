@@ -625,6 +625,129 @@ button:hover{
 
 
 
+
+/* editor page style */
+
+
+
+
+
+
+.editor{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+
+.edit-body{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: auto;
+
+}
+
+.editor-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid grey;
+    background-color: rgba(38, 77, 128, 0.575);
+    width: 95%;
+    height: 100vh;
+    animation: slide-up 4s forwards;
+    
+}
+
+
+.code1{
+    padding: 20px 10px;
+    background-color: rgba(61, 103, 158, 0.575);
+    border-bottom: none;
+    animation: slide-down 6s forwards;
+
+}
+
+
+.editor-2{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(28, 51, 82, 0.575);
+    border: 1px solid grey;
+    width: 95%;
+    height: 100vh;
+    animation: slide-down 4s forwards;
+
+    
+}
+
+.code2{
+    padding: 20px 10px;
+    background-color: rgba(29, 60, 100, 0.575);
+    border-bottom: none;
+    animation: slide-down 6s forwards;
+}
+
+.editor-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid grey;
+    width: 95%;
+    height: 100vh;
+    animation: slide-up 4s forwards;
+
+    
+}
+
+
+.lower-field{
+    display: flex;
+    gap: 150%;
+    margin: auto;
+
+}
+
+
+.review{
+    h2{
+        background-color: rgb(3, 45, 65);
+        padding: 10px 15px; 
+        border-radius: 10px;
+    }
+    h2:hover{
+        background-color: rgb(5, 68, 97);
+        cursor: pointer;
+    }
+
+}
+
+
+.run{
+    display: flex;
+    gap: 100px;
+    margin: auto;
+    h2{
+        background-color: rgb(3, 45, 65);
+        padding: 10px 15px; 
+        border-radius: 10px;
+    }
+    h2:hover{
+        background-color: rgb(5, 68, 97);
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
 /* bill page style */
 
 
