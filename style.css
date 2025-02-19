@@ -44,6 +44,7 @@ nav a{
     text-decoration: none;
     animation: slide-up 1s forwards;
     opacity: 0;
+    padding: 10px;
 }
 
 nav a:nth-child(1) {
@@ -73,7 +74,56 @@ nav a:nth-child(6) {
 nav a:hover{
     color: cyan;
     border-bottom: 1px solid cyan;
+    padding: 10px;
+
 }
+
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content a {
+    color: aliceblue;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #17498ba1;
+    color: rgb(245, 242, 242);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(26, 58, 100, 0.658);
+    min-width: 200px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.295);
+    border-radius: 5px;
+    opacity: 0;
+    animation: slide-up 2s forwards;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+}
+
+
+
+
+
+
+
 
 
 
@@ -101,6 +151,7 @@ nav a:hover{
     background-image: linear-gradient(rgba(4, 9, 30, 0.562),rgba(4,9,30,0.6)),url(images/web.jpg);
     flex-direction: column;
     gap: 40px;
+
     h1{
         font-size: 75px;
         animation: slide-left 3s ease-out forwards;
@@ -229,6 +280,83 @@ nav a:hover{
 
 }
 
+
+
+
+
+
+
+
+
+
+/* price page style */
+
+
+
+
+
+.price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    height: 100vh;
+    padding: 100px;
+}
+
+.prices{
+    display: flex;
+    gap: 15%;
+    a{
+        background-color: transparent;
+        border: 1px solid grey;
+        color: aliceblue;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+    a:hover{
+        background-color: rgb(10, 77, 155);
+    }
+    .low{
+        border: 1px solid grey;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .low:hover{
+        background-color: rgb(16, 38, 63);
+        box-shadow: 0px 2px 15px rgb(110, 112, 114);
+    }
+    .medium{
+        border: 1px solid grey;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+
+    }
+    .medium:hover{
+        background-color: rgb(16, 38, 63);
+        box-shadow: 0px 2px 15px rgb(110, 112, 114);
+    }
+    .high{
+        border: 1px solid grey;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+
+    }
+    .high:hover{
+        background-color: rgb(16, 38, 63);
+        box-shadow: 0px 2px 15px rgb(110, 112, 114);
+    }
+    
+}
 
 .track-service{
     display: flex;
@@ -821,6 +949,165 @@ button:hover{
     flex-direction: column;
     gap: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* web page style */
+
+
+
+
+.web-body{
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 5%;
+    margin: auto;
+    .web-body-right{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    img{
+        width: 600px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+        animation: slide-down 5s forwards;
+        box-shadow: 0px 1px 30px aqua;
+    }
+    h1{
+        font-size: 80px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        animation: slide-right 3s forwards;
+        box-shadow: 0px 0px 15px cyan;
+        border-radius: 5px;
+    }
+    a{
+        background-color: rgb(0, 102, 255);
+        padding: 15px 25px;
+        color: aliceblue;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+    form{
+        width: 100%;
+        animation: slide-up 4s forwards;
+    }
+    h3{
+        color: cyan;
+        font-style: italic;
+        animation: slide-left 3s forwards;
+    }
+}
+
+.notice{
+    background-color: rgb(2, 44, 100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    h3{
+        font-style: italic;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px;
+        color: aqua;
+
+    }
+    h1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 60px;
+    }
+}
+
+.web-list{
+    background-color: rgb(5, 26, 56);
+    height: 100vh;
+    display: flex;
+    padding: 100px;
+    flex-direction: column;
+    gap: 50px;
+    overflow: scroll;
+    margin: auto;
+    
+
+    .web-site{
+        background-color: rgb(2, 12, 32);
+        border-radius: 20px;
+        width: 80%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+        padding: 20px;
+        margin: auto;
+        animation: slide-up 2s forwards;
+        h2{
+            color: aqua;
+        }
+        h3{
+            font-style: italic;
+            color: rgb(125, 125, 125);
+        }
+        img{
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+        }
+        .web-info{
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            
+        }
+        .web-details{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            h3{
+                color: azure;
+            }
+        }
+        .web-pricing{
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+            color: cyan;
+        }
+        .p-ctn{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            color: aliceblue;
+            h3{
+                color: cadetblue;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 @keyframes slide-right {
