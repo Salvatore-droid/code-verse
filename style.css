@@ -1080,6 +1080,7 @@ button:hover{
             gap: 50px;
             h3{
                 color: azure;
+                max-width: 90%;
             }
         }
         .web-pricing{
